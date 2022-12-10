@@ -135,11 +135,10 @@ namespace osu.Game.Graphics.UserInterface
                             EdgeEffect = new EdgeEffectParameters       // does this control Kiai pulses? 
                             {
                                 Type = EdgeEffectType.Shadow,
-                                //Colour = Color4.Black.Opacity(0.2f),    
-                                Colour = Color4.Black.Opacity(0.4f),    
+                                Colour = Color4.Black.Opacity(0.2f),        
                                 Offset = new Vector2(2, 0),
-                                //Radius = 2,
-                                Radius = 4,
+                                Radius = 2,
+                                
                             },
                             Children = new[]
                             {
