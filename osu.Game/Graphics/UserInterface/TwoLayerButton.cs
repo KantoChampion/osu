@@ -30,7 +30,10 @@ namespace osu.Game.Graphics.UserInterface
         public Box TextLayer;
 
         private const int transform_time = 600;
+<<<<<<< Updated upstream
         private const int pulse_length = 250;
+=======
+>>>>>>> Stashed changes
 
         private const float shear_width = 5f;
 
@@ -129,12 +132,14 @@ namespace osu.Game.Graphics.UserInterface
                             RelativeSizeAxes = Axes.Both,
                             Masking = true,
                             MaskingSmoothness = 2,
-                            EdgeEffect = new EdgeEffectParameters
+                            EdgeEffect = new EdgeEffectParameters       // does this control Kiai pulses? 
                             {
                                 Type = EdgeEffectType.Shadow,
-                                Colour = Color4.Black.Opacity(0.2f),
+                                //Colour = Color4.Black.Opacity(0.2f),    
+                                Colour = Color4.Black.Opacity(0.4f),    
                                 Offset = new Vector2(2, 0),
-                                Radius = 2,
+                                //Radius = 2,
+                                Radius = 4,
                             },
                             Children = new[]
                             {
